@@ -7,11 +7,21 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>CS Selector Playground</h1>
+    <form class="form" action="POST">
+        <p class="form__group">
+            <label class="form__label" for="name">Name:</label>
+            <input class="input" type="text" name="name" id="name" />
+        </p>
+        <p class="form__group">
+            <label class="form__label" for="email">Email:</label>
+            <input class="input" type="email" name="email" id="email" />
+        </p>
+        <p class="form__group">
+            <label class="form__label" for="password">Password:</label>
+            <input class="input" type="password" name="password" id="password" />
+        </p>
 
-    <p>I am a plain old paragraph element</p>
-    <p class="red">I have a class!</p>
-    <p id="orange">i have an id</p>
-    <p class="red" id="purple">i am super fancy i have a class <em>and</em> an id</p>
+        <button class="button" type="submit">Sign Up</button>
+    </form>
 </body>
 </html>

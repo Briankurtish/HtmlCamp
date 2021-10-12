@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microblog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="navbar">
         <div class="navbar__brand">
-            <img src="logo.svg" alt="logo image">Microblog
+            <img class="navbar__logo" src="logo.svg" alt="logo image">Microblog
         </div>
         
         <ul class="navbar__navigation">
@@ -21,7 +22,7 @@
         </ul>
         
     </header>
-    <main>
+    <main class="main">
         <section>
             <h1>Add New Entry</h1>
             <form class="form" action="/entry" method="POST">

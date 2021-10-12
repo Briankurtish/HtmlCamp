@@ -6,10 +6,29 @@
     <title>Microblog</title>
 </head>
 <body>
-    <header></header>
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img src="logo.svg" alt="logo image">Microblog
+        </div>
+        
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item">
+                <a href="#" class="navbar__link">Recent</a>
+            </li>
+            <li class="navbar__navigation-item">
+                <a href="#" class="navbar__link">Calendar</a>
+            </li>
+        </ul>
+        
+    </header>
     <main>
         <section>
             <h1>Add New Entry</h1>
+            <form action="/entry">
+                <label for="sample-field">Sample:</label>
+                <input type="text" name="sample" id="sample-field" />
+                <button type="submit">Submit</button>
+            </form>
         </section>
         <section>
             <h1>Recent posts</h1>

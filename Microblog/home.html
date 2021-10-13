@@ -26,21 +26,21 @@
         <section>
             <h1>Add New Entry</h1>
             <form class="form" action="/entry" method="POST">
-                <p>
+                <p class="form__input">
                     <label class="form__label" for="entry">Entry Contents:</label>
-                    <textarea class="form__textarea" name="content" id="entry"></textarea>
+                    <textarea class="form__textarea" name="content" id="entry" aria-label="Entry contents"></textarea>
                 </p>
                 <button class="form__submit" type="submit">Add entry</button>
             </form>
         </section>
         <section>
             <h1>Recent posts</h1>
-            <article>
+            <article class="entry">
                 <div>
-                    <h2>A bit of chill day today!</h2>
-                    <time datetime="12-10-2021">Oct 12</time>
+                    <h2 class="entry__title">A bit of chill day today!</h2>
+                    <time class="entry__date" datetime="12-10-2021">• Oct 12</time>
                 </div>
-                <p>Today i couldn't do much programming, but that's okay! Can't be too awesome every day now!</p>
+                <p class="entry__content">Today i couldn't do much programming, but that's okay! Can't be too awesome every day now!</p>
             </article>
         </section>
     </main>
